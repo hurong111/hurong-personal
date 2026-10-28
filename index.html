@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="胡镕的个人作品集 - 大连民族大学物联网工程专业">
+  <title>胡镕 · 个人作品集</title>
+
+  <!-- 站点图标与浏览器主题色 -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0F1923">
+
+  <!-- 社交分享预览（部署拿到域名后，把 og:url / og:image 换成绝对地址） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="胡镕 · 个人作品集">
+  <meta property="og:description" content="大连民族大学物联网工程专业 · 项目、获奖、活动与兴趣爱好">
+  <meta property="og:image" content="assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="胡镕 · 个人作品集">
+  <meta name="twitter:description" content="大连民族大学物联网工程专业 · 项目、获奖、活动与兴趣爱好">
+  <meta name="twitter:image" content="assets/og-cover.png">
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+
+  <!-- 图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 样式 -->
+  <link rel="stylesheet" href="css/theme.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/components.css?v=6">
+</head>
+<body>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-dot"></span>
+        胡镕<span class="nav-logo-en">HURONG</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#education">教育</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#activities">活动</a></li>
+        <li><a href="#hobbies">爱好</a></li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" title="切换主题">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="admin.html" class="icon-btn" title="管理后台">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" title="菜单">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 移动端菜单 -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#hero">首页</a>
+    <a href="#about">关于我</a>
+    <a href="#education">教育经历</a>
+    <a href="#projects">项目</a>
+    <a href="#activities">活动</a>
+    <a href="#hobbies">兴趣爱好</a>
+    <a href="#blog">博客文章</a>
+    <a href="#contact">联系我</a>
+    <a href="admin.html">管理后台</a>
+  </div>
+
+  <!-- ===== Hero 英雄区 ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <canvas class="hero-particles" id="hero-particles"></canvas>
+    <div class="hero-content" id="hero-content">
+      <!-- JS 动态渲染 -->
+    </div>
+    <a href="#about" class="hero-scroll-hint" aria-label="向下滚动">
+      <span class="hero-scroll-text">SCROLL</span>
+      <span class="hero-scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== 兴趣跑马灯 ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>物联网工程</span><i>✦</i><span>Unity3D</span><i>✦</i><span>前端设计</span><i>✦</i><span>虚拟现实</span><i>✦</i><span>平面设计</span><i>✦</i><span>摄影</span><i>✦</i><span>非遗数字化</span><i>✦</i><span>终身学习</span><i>✦</i>
+      <span>物联网工程</span><i>✦</i><span>Unity3D</span><i>✦</i><span>前端设计</span><i>✦</i><span>虚拟现实</span><i>✦</i><span>平面设计</span><i>✦</i><span>摄影</span><i>✦</i><span>非遗数字化</span><i>✦</i><span>终身学习</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== 关于我 ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">01</span>
+        <h2 class="section-title">关于 <span>我</span></h2>
+        <p class="section-subtitle">Get to know me</p>
+      </header>
+      <div class="about-content" id="about-content">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 教育经历 ===== -->
+  <section class="section section-alt section-pattern" id="education">
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">02</span>
+        <h2 class="section-title">教育 <span>经历</span></h2>
+        <p class="section-subtitle">我的成长之路 · Education</p>
+      </header>
+      <div class="timeline" id="timeline">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 项目与获奖 ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">03</span>
+        <h2 class="section-title">项目与 <span>获奖</span></h2>
+        <p class="section-subtitle">Projects & Awards</p>
+      </header>
+      <div class="projects-grid" id="projects-grid">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 校内活动与实践 ===== -->
+  <section class="section section-alt section-pattern" id="activities">
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">04</span>
+        <h2 class="section-title">校内活动与 <span>实践</span></h2>
+        <p class="section-subtitle">Activities & Practice</p>
+      </header>
+      <div class="activities-grid" id="activities-grid">
+        <!-- JS 动态渲染 -->
+      </div>
+
+      <!-- 图片轮播（预留图片位置：assets/images/activity-1.jpg 等，缺图时自动回退为渐变色块） -->
+      <div class="carousel fade-up" id="activities-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="assets/images/activity-1.jpg" alt="一帮一互助小组" loading="lazy" onerror="this.remove()">
+            <span class="slide-caption">一帮一互助小组</span>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/activity-2.jpg" alt="三下乡社会实践" loading="lazy" onerror="this.remove()">
+            <span class="slide-caption">三下乡社会实践</span>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/activity-3.jpg" alt="学子母校行" loading="lazy" onerror="this.remove()">
+            <span class="slide-caption">学子母校行</span>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 兴趣爱好 ===== -->
+  <!-- section-pattern 提供底层网点纹理；section-glow 为中层低透明度模糊光斑 -->
+  <section class="section section-pattern" id="hobbies">
+    <div class="section-glow" aria-hidden="true">
+      <span class="glow-blob glow-blob--pink"></span>
+      <span class="glow-blob glow-blob--mint"></span>
+      <span class="glow-blob glow-blob--warm"></span>
+    </div>
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">05</span>
+        <h2 class="section-title">兴趣与 <span>爱好</span></h2>
+        <p class="section-subtitle">Hobbies & Interests</p>
+        <!-- 渐变分割线：内部渐变层缓慢平移，形成极慢的色相流动 -->
+        <span class="title-divider" aria-hidden="true"></span>
+      </header>
+      <div class="hobbies-grid" id="hobbies-grid">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 博客 ===== -->
+  <!-- section-alt 提供交替底色，section-pattern 提供网点纹理，section-glow 提供粉青光斑 -->
+  <section class="section section-alt section-pattern" id="blog">
+    <div class="section-glow" aria-hidden="true">
+      <span class="glow-blob glow-blob--pink"></span>
+      <span class="glow-blob glow-blob--mint"></span>
+    </div>
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">06</span>
+        <h2 class="section-title">博客 <span>随笔</span></h2>
+        <p class="section-subtitle">Notes & Blog</p>
+      </header>
+      <div class="blog-grid" id="blog-grid">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 联系方式 ===== -->
+  <section class="section section-pattern" id="contact">
+    <div class="section-glow" aria-hidden="true">
+      <span class="glow-blob glow-blob--mint"></span>
+      <span class="glow-blob glow-blob--pink"></span>
+    </div>
+    <div class="container">
+      <header class="section-head fade-up">
+        <span class="section-index">07</span>
+        <h2 class="section-title">联系 <span>我</span></h2>
+        <p class="section-subtitle">随时欢迎交流 · Contact</p>
+      </header>
+      <div class="contact-grid" id="contact-grid">
+        <!-- JS 动态渲染 -->
+      </div>
+      <div class="social-links" id="social-links">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container footer-content" id="footer-content">
+      <!-- JS 动态渲染 -->
+    </div>
+  </footer>
+
+  <!-- ===== 回到顶部 ===== -->
+  <button class="back-to-top" id="back-to-top" title="回到顶部">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== 音乐播放器 ===== -->
+  <div class="music-player" id="music-player">
+    <button class="music-btn" title="背景音乐">
+      <i class="fa-solid fa-music"></i>
+    </button>
+    <div class="music-info">Enjoy the vibe 🎵</div>
+  </div>
+
+  <!-- ===== 博客阅读弹层 ===== -->
+  <div class="blog-modal-overlay" id="blog-modal-overlay" role="dialog" aria-modal="true" aria-label="文章阅读">
+    <article class="blog-modal" id="blog-modal">
+      <button class="blog-modal-close" id="blog-modal-close" title="关闭">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="blog-modal-body" id="blog-modal-body">
+        <!-- JS 动态渲染 -->
+      </div>
+    </article>
+  </div>
+
+  <!-- ===== 脚本 ===== -->
+  <script src="js/api.js?v=6"></script>
+  <script src="js/theme.js?v=6"></script>
+  <script src="js/animations.js?v=6"></script>
+  <script src="js/counter.js?v=6"></script>
+  <script src="js/music.js?v=6"></script>
+  <script src="js/carousel.js?v=6"></script>
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>

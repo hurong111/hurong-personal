@@ -1,0 +1,103 @@
+/* ===== 主题变量系统 ===== */
+
+/* 浅色主题（默认） */
+:root {
+  /* 主色调：珊瑚粉 */
+  --color-primary: #FF8A9E;
+  --color-primary-light: #FFB3BE;
+  --color-primary-dark: #E66B7E;
+
+  /* 辅助色：薄荷青 */
+  --color-secondary: #7FD1C7;
+  --color-secondary-light: #A8E3DB;
+  --color-secondary-dark: #5BB8AF;
+
+  /* 点缀色：落日橙 */
+  --color-accent: #FFB088;
+  --color-accent-light: #FFCDB2;
+  --color-accent-dark: #E89467;
+
+  /* 文字色 */
+  --color-text: #2D3A4B;
+  --color-text-secondary: #6B7A8D;
+  --color-text-muted: #9AA7B8;
+
+  /* 背景色 */
+  --color-bg: #FAF7F2;
+  --color-bg-alt: #F4F0E8;
+  --color-card: #FFFDF8;
+
+  /* 边框 */
+  --color-border: rgba(45, 58, 75, 0.08);
+  --color-border-light: rgba(45, 58, 75, 0.04);
+
+  /* 阴影 */
+  --shadow-soft: 0 4px 20px rgba(45, 58, 75, 0.08);
+  --shadow-medium: 0 8px 30px rgba(45, 58, 75, 0.12);
+  --shadow-card: 0 2px 15px rgba(45, 58, 75, 0.06);
+  --shadow-hover: 0 12px 40px rgba(45, 58, 75, 0.15);
+
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* 字体 */
+  --font-sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Montserrat', 'Noto Sans SC', sans-serif;
+  --font-script: 'Ma Shan Zheng', 'Great Vibes', cursive;
+
+  /* 过渡 */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 暗色主题 */
+[data-theme="dark"] {
+  /* 主色调：霓虹珊瑚 */
+  --color-primary: #FF6B8A;
+  --color-primary-light: #FF8FA8;
+  --color-primary-dark: #E84F70;
+
+  /* 辅助色：幽绿 */
+  --color-secondary: #5BB8AF;
+  --color-secondary-light: #7FD1C7;
+  --color-secondary-dark: #3D9B92;
+
+  /* 点缀色：落日橙 */
+  --color-accent: #FFB088;
+  --color-accent-light: #FFCDB2;
+  --color-accent-dark: #E89467;
+
+  /* 文字色 */
+  --color-text: #E8E6E1;
+  --color-text-secondary: #B8B5AE;
+  --color-text-muted: #7A7770;
+
+  /* 背景色 */
+  --color-bg: #0F1923;
+  --color-bg-alt: #14202E;
+  --color-card: #1A2533;
+
+  /* 边框 */
+  --color-border: rgba(232, 230, 225, 0.1);
+  --color-border-light: rgba(232, 230, 225, 0.05);
+
+  /* 阴影 */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.5);
+}

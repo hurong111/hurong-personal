@@ -1,0 +1,13 @@
+# 部署副本：由根目录源文件同步生成，无需纳入版本管理
+dist/
+
+# 工具截图 / 临时目录
+.screenshots/
+.trae-html-share-packages/
+
+# 根目录的课程 PDF（与网站本身无关）
+/*.pdf
+
+# 系统文件
+Thumbs.db
+.DS_Store
